@@ -1,5 +1,6 @@
 import productoModel from "../models/productos.model.js";
 import mongoose from "mongoose";
+import db from '../config/db.js'
 
 const arregloDeProductos = [
   {
