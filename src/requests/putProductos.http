@@ -1,0 +1,16 @@
+###
+PUT http://localhost:5000/api/productos/update/653b064b1941eb3f6807d52a HTTP/1.1
+Content-Type: application/json
+
+{
+     "Prod_Name": "Producto 1",
+    "Price": 10.99,
+    "Width": 5.5,
+    "Height": 8.2,
+    "Colour": "Rojo",
+    "Images": "imagen1.jpg",
+    "state_delete": false,
+    "Delete_at": null,
+    "Created_at": null,
+    "Update_at": null
+}
