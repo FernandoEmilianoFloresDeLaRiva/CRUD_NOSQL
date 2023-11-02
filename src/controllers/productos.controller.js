@@ -4,6 +4,7 @@ export const getProductos = (req, res) => {
   const { offset } = req.params;
   productoModel
     .find({ state_delete: false })
+    .sort({ Price: -1 })
     .skip(offset)
     .limit(5)
     .then((response) => res.status(200).json(response))
