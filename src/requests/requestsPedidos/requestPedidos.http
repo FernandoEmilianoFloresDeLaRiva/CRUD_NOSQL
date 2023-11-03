@@ -1,0 +1,45 @@
+###
+POST http://localhost:5000/api/pedidos HTTP/1.1
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI
+
+{
+    "id_entrega": 1, 
+    "id_producto": 1,
+    "id_lugar": 1,
+    "fecha": "2023-11-10",
+    "id_horario": 1,
+    "total": 50,
+    "deleted": "N",
+    "Deleted_at": null,
+    "Created_at": null,
+    "Update_at": null 
+}
+
+###
+GET http://localhost:5000/api/pedidos/?page=1&limit=2 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI
+###
+GET http://localhost:5000/api/pedidos/6542fad92b2128928905bbeb HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI
+###
+PUT http://localhost:5000/api/pedidos/update/6542fad92b2128928905bbeb HTTP/1.1
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI
+
+{
+    "id_entrega": 1, 
+    "id_producto": 1,
+    "id_lugar": 1,
+    "fecha": "2023-11-10",
+    "id_horario": 1,
+    "total": 50,
+    "deleted": "N",
+    "Deleted_at": null,
+    "Created_at": null,
+    "Update_at": null 
+}
+
+###
+DELETE http://localhost:5000/api/pedidos/delete/6542f85a5e853ebe3f918f6f HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI

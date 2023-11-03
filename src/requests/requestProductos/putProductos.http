@@ -1,6 +1,7 @@
 ###
 PUT http://localhost:5000/api/productos/update/653b064b1941eb3f6807d52a HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjU0NDljYjQxYzg3Mjk4ZTIyMWY5OTk2In0sImlhdCI6MTY5OTAyOTcxMCwiZXhwIjoxNjk5MDMzMzEwfQ.-YIKFADvb-jlMzl9FZPLWxOt9EyEsa6O60N7DY2CupI
 
 {
      "Prod_Name": "Producto 1",
